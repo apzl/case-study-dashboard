@@ -417,6 +417,7 @@ details.all .it b{font-weight:600}
 :root[data-theme="dark"] .tag,:root[data-theme="dark"] .bc,:root[data-theme="dark"] .node,:root[data-theme="dark"] .side,:root[data-theme="dark"] .gain,:root[data-theme="dark"] .mono.m-s{background-color:var(--raised)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .step.last .node{background-color:var(--head)}}
 :root[data-theme="dark"] .step.last .node{background-color:var(--head)}
+.privacy-note{display:flex;gap:10px;align-items:flex-start;margin:18px 0 6px;padding:11px 14px;border-radius:12px;background:var(--paper);border:1px solid var(--line);color:var(--muted);font-size:13px;line-height:1.45}.privacy-note svg{flex:none;margin-top:1px;color:var(--accent-deep,#3e9a57)}.privacy-note b{color:var(--ink)}
 </style>
 <script>try{var t=localStorage.getItem("heidi-theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
 </head>
@@ -433,6 +434,7 @@ details.all .it b{font-weight:600}
 </header>
 
 <main class="wrap" id="app">
+  <div class="privacy-note" role="note"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><span><b>Public version.</b> Personal information (contact names, direct phone numbers, personal e-mails and LinkedIn profiles) is withheld here. The full details were submitted privately to Heidi Systems.</span></div>
   <section aria-labelledby="ov">
     <h2 id="ov">At a glance</h2>
     <p class="h2sub">Berlin property managers and housing companies on the list.</p>
