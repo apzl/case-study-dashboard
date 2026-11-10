@@ -310,32 +310,33 @@ details.all .it b{font-weight:600}
 
 /* dark mode (same Heidi palette tuned for dark screens) */
 @media (prefers-color-scheme:dark){
-:root:not([data-theme="light"]){--ink:#e6efe9;--head:#0b1411;--on-accent:#10201b;--accent:#8ad68f;--accent-deep:#6fc476;--accent-soft:#1d3a2b;
---muted:#a3b6af;--faint:#8a9c95;--line:#24342f;--paper:#16231f;--stone:#0f1a17;
+:root:not([data-theme="light"]) .tag,:root:not([data-theme="light"]) .bc,:root:not([data-theme="light"]) .node,:root:not([data-theme="light"]) .side,:root:not([data-theme="light"]) .gain,:root:not([data-theme="light"]) .mono.m-s{background-color:var(--raised)}
+:root:not([data-theme="light"]){--ink:#f2f4f3;--head:#0a0a0a;--on-accent:#0a0a0a;--accent:#8ad68f;--accent-deep:#6fc476;--accent-soft:#1d3a2b;
+--muted:#a3aca8;--faint:#8c938f;--line:#2a2e2c;--paper:#111312;--stone:#000000;--raised:#1a1d1b;
 --ok:#5cb874;--warn:#c9a347;--bad:#e8875f;--orange:#e8834f;--blue:#7d9be0;--link:#93b3f2;
---tA:#5cb874;--tB:#7d9be0;--tC:#c9a347;--tD:#6f817a;
---sz1:#5cb874;--sz2:#8ad68f;--sz3:#3f6e4b;--sz4:#33443e;color-scheme:dark}
+--tA:#5cb874;--tB:#7d9be0;--tC:#c9a347;--tD:#7a807d;
+--sz1:#5cb874;--sz2:#8ad68f;--sz3:#3f6e4b;--sz4:#2e3230;color-scheme:dark}
 :root:not([data-theme="light"]) body{background:var(--stone)}
 :root:not([data-theme="light"]) .card{border-color:var(--line)}
-:root:not([data-theme="light"]) .kpi.hl,:root:not([data-theme="light"]) .call,:root:not([data-theme="light"]) .per,:root:not([data-theme="light"]) .vcost,:root:not([data-theme="light"]) .step.last .node{border:1px solid #2b3f38}
-:root:not([data-theme="light"]) .tb{color:#0d1714}
+:root:not([data-theme="light"]) .kpi.hl,:root:not([data-theme="light"]) .call,:root:not([data-theme="light"]) .per,:root:not([data-theme="light"]) .vcost,:root:not([data-theme="light"]) .step.last .node{border:1px solid var(--line)}
+:root:not([data-theme="light"]) .tb{color:#0a0a0a}
 :root:not([data-theme="light"]) .tb.A{background:#5cb874}
 :root:not([data-theme="light"]) .tb.B{background:#7d9be0}
 :root:not([data-theme="light"]) .tb.C{background:#c9a347}
-:root:not([data-theme="light"]) input[type=search],:root:not([data-theme="light"]) select,:root:not([data-theme="light"]) .chip,:root:not([data-theme="light"]) .tg{border-color:#33463f;background-color:var(--paper);color:var(--ink)}
-:root:not([data-theme="light"]) input::placeholder{color:#7f928b}
-:root:not([data-theme="light"]) tbody tr:hover td{background:#1b2a25}
+:root:not([data-theme="light"]) input[type=search],:root:not([data-theme="light"]) select,:root:not([data-theme="light"]) .chip,:root:not([data-theme="light"]) .tg{border-color:var(--line);background-color:var(--raised);color:var(--ink)}
+:root:not([data-theme="light"]) input::placeholder{color:#8c938f}
+:root:not([data-theme="light"]) tbody tr:hover td{background:var(--raised)}
 :root:not([data-theme="light"]) .a-hi,:root:not([data-theme="light"]) .lv-pm,:root:not([data-theme="light"]) .tag.good{background:#1d3a2b;color:#9ee0a6}
 :root:not([data-theme="light"]) .a-mid,:root:not([data-theme="light"]) .lv-od,:root:not([data-theme="light"]) .tag.blue{background:#1e2a45;color:#b1c6f5}
 :root:not([data-theme="light"]) .tag.warn{background:#3d2418;color:#f2b08f}
 :root:not([data-theme="light"]) .scrim{background:rgba(0,0,0,.55)}
 :root:not([data-theme="light"]) aside.drawer{box-shadow:-12px 0 40px rgba(0,0,0,.5)}
 :root:not([data-theme="light"]) .inf .pop{box-shadow:0 8px 24px rgba(0,0,0,.5)}
-:root:not([data-theme="light"]) .map-tip,:root:not([data-theme="light"]) .bc-tip{background:#0b1411;border:1px solid #2b3f38;box-shadow:0 6px 20px rgba(0,0,0,.5)}
-:root:not([data-theme="light"]) #map .bz{fill:#1c2b26;stroke:#0f1a17}
-:root:not([data-theme="light"]) #map .bz:hover,:root:not([data-theme="light"]) #map .bz.on{fill:#25443a}
-:root:not([data-theme="light"]) #map .do,:root:not([data-theme="light"]) .lg.lo{fill:#71847d;background:#71847d}
-:root:not([data-theme="light"]) #map .db{stroke:#16231f}
+:root:not([data-theme="light"]) .map-tip,:root:not([data-theme="light"]) .bc-tip{background:#0a0a0a;border:1px solid var(--line);box-shadow:0 6px 20px rgba(0,0,0,.5)}
+:root:not([data-theme="light"]) #map .bz{fill:#1c1f1d;stroke:#000}
+:root:not([data-theme="light"]) #map .bz:hover,:root:not([data-theme="light"]) #map .bz.on{fill:#24382d}
+:root:not([data-theme="light"]) #map .do,:root:not([data-theme="light"]) .lg.lo{fill:#7a807d;background:#7a807d}
+:root:not([data-theme="light"]) #map .db{stroke:#111312}
 :root:not([data-theme="light"]) #map .da{stroke:#e6efe9}
 :root:not([data-theme="light"]) .lg.la{box-shadow:0 0 0 1.5px #e6efe9}
 :root:not([data-theme="light"]) .ln-n,:root:not([data-theme="light"]) .stage h3 .n{color:var(--on-accent)}
@@ -343,7 +344,7 @@ details.all .it b{font-weight:600}
 :root:not([data-theme="light"]) .t-b,:root:not([data-theme="light"]) .m-b{background:#1e2a45;color:#b1c6f5}
 :root:not([data-theme="light"]) .t-l{background:#3a3018;color:#e0c27a}
 :root:not([data-theme="light"]) .m-c{background:#3a2a18;color:#e9b47c}
-:root:not([data-theme="light"]) .m-s{background:#24342f;color:var(--ink)}
+:root:not([data-theme="light"]) .m-s{background:var(--raised);color:var(--ink)}
 :root:not([data-theme="light"]) #bubbles .r-g circle{fill:#1d3a2b;stroke:#5cb874}
 :root:not([data-theme="light"]) #bubbles .r-g text{fill:#a9e6b0}
 :root:not([data-theme="light"]) #bubbles .r-b circle{fill:#1e2a45;stroke:#7d9be0}
@@ -354,40 +355,40 @@ details.all .it b{font-weight:600}
 :root:not([data-theme="light"]) .lg.g{background:#5cb874}
 :root:not([data-theme="light"]) .lg.b{background:#7d9be0}
 :root:not([data-theme="light"]) .lg.l{background:#c9a347}
-:root:not([data-theme="light"]) .br::before,:root:not([data-theme="light"]) .bc::before{border-color:#3a4f47}
-:root:not([data-theme="light"]) .br::after{border-color:#3a4f47}
+:root:not([data-theme="light"]) .br::before,:root:not([data-theme="light"]) .bc::before{border-color:#3a3f3c}
+:root:not([data-theme="light"]) .br::after{border-color:#3a3f3c}
 :root:not([data-theme="light"]) .gd{fill:#1d3a2b;stroke:#5cb874}
 :root:not([data-theme="light"]) .gk{stroke:#8ad68f}
 :root:not([data-theme="light"]) .gdrop{color:#f2a27f}
 :root:not([data-theme="light"]) .donut text,:root:not([data-theme="light"]) .sz svg text{fill:var(--ink)}
 :root:not([data-theme="light"]) .theme-t .i-sun{display:inline}:root:not([data-theme="light"]) .theme-t .i-moon{display:none}
 }
-:root[data-theme="dark"]{--ink:#e6efe9;--head:#0b1411;--on-accent:#10201b;--accent:#8ad68f;--accent-deep:#6fc476;--accent-soft:#1d3a2b;
---muted:#a3b6af;--faint:#8a9c95;--line:#24342f;--paper:#16231f;--stone:#0f1a17;
+:root[data-theme="dark"]{--ink:#f2f4f3;--head:#0a0a0a;--on-accent:#0a0a0a;--accent:#8ad68f;--accent-deep:#6fc476;--accent-soft:#1d3a2b;
+--muted:#a3aca8;--faint:#8c938f;--line:#2a2e2c;--paper:#111312;--stone:#000000;--raised:#1a1d1b;
 --ok:#5cb874;--warn:#c9a347;--bad:#e8875f;--orange:#e8834f;--blue:#7d9be0;--link:#93b3f2;
---tA:#5cb874;--tB:#7d9be0;--tC:#c9a347;--tD:#6f817a;
---sz1:#5cb874;--sz2:#8ad68f;--sz3:#3f6e4b;--sz4:#33443e;color-scheme:dark}
+--tA:#5cb874;--tB:#7d9be0;--tC:#c9a347;--tD:#7a807d;
+--sz1:#5cb874;--sz2:#8ad68f;--sz3:#3f6e4b;--sz4:#2e3230;color-scheme:dark}
 :root[data-theme="dark"] body{background:var(--stone)}
 :root[data-theme="dark"] .card{border-color:var(--line)}
-:root[data-theme="dark"] .kpi.hl,:root[data-theme="dark"] .call,:root[data-theme="dark"] .per,:root[data-theme="dark"] .vcost,:root[data-theme="dark"] .step.last .node{border:1px solid #2b3f38}
-:root[data-theme="dark"] .tb{color:#0d1714}
+:root[data-theme="dark"] .kpi.hl,:root[data-theme="dark"] .call,:root[data-theme="dark"] .per,:root[data-theme="dark"] .vcost,:root[data-theme="dark"] .step.last .node{border:1px solid var(--line)}
+:root[data-theme="dark"] .tb{color:#0a0a0a}
 :root[data-theme="dark"] .tb.A{background:#5cb874}
 :root[data-theme="dark"] .tb.B{background:#7d9be0}
 :root[data-theme="dark"] .tb.C{background:#c9a347}
-:root[data-theme="dark"] input[type=search],:root[data-theme="dark"] select,:root[data-theme="dark"] .chip,:root[data-theme="dark"] .tg{border-color:#33463f;background-color:var(--paper);color:var(--ink)}
-:root[data-theme="dark"] input::placeholder{color:#7f928b}
-:root[data-theme="dark"] tbody tr:hover td{background:#1b2a25}
+:root[data-theme="dark"] input[type=search],:root[data-theme="dark"] select,:root[data-theme="dark"] .chip,:root[data-theme="dark"] .tg{border-color:var(--line);background-color:var(--raised);color:var(--ink)}
+:root[data-theme="dark"] input::placeholder{color:#8c938f}
+:root[data-theme="dark"] tbody tr:hover td{background:var(--raised)}
 :root[data-theme="dark"] .a-hi,:root[data-theme="dark"] .lv-pm,:root[data-theme="dark"] .tag.good{background:#1d3a2b;color:#9ee0a6}
 :root[data-theme="dark"] .a-mid,:root[data-theme="dark"] .lv-od,:root[data-theme="dark"] .tag.blue{background:#1e2a45;color:#b1c6f5}
 :root[data-theme="dark"] .tag.warn{background:#3d2418;color:#f2b08f}
 :root[data-theme="dark"] .scrim{background:rgba(0,0,0,.55)}
 :root[data-theme="dark"] aside.drawer{box-shadow:-12px 0 40px rgba(0,0,0,.5)}
 :root[data-theme="dark"] .inf .pop{box-shadow:0 8px 24px rgba(0,0,0,.5)}
-:root[data-theme="dark"] .map-tip,:root[data-theme="dark"] .bc-tip{background:#0b1411;border:1px solid #2b3f38;box-shadow:0 6px 20px rgba(0,0,0,.5)}
-:root[data-theme="dark"] #map .bz{fill:#1c2b26;stroke:#0f1a17}
-:root[data-theme="dark"] #map .bz:hover,:root[data-theme="dark"] #map .bz.on{fill:#25443a}
-:root[data-theme="dark"] #map .do,:root[data-theme="dark"] .lg.lo{fill:#71847d;background:#71847d}
-:root[data-theme="dark"] #map .db{stroke:#16231f}
+:root[data-theme="dark"] .map-tip,:root[data-theme="dark"] .bc-tip{background:#0a0a0a;border:1px solid var(--line);box-shadow:0 6px 20px rgba(0,0,0,.5)}
+:root[data-theme="dark"] #map .bz{fill:#1c1f1d;stroke:#000}
+:root[data-theme="dark"] #map .bz:hover,:root[data-theme="dark"] #map .bz.on{fill:#24382d}
+:root[data-theme="dark"] #map .do,:root[data-theme="dark"] .lg.lo{fill:#7a807d;background:#7a807d}
+:root[data-theme="dark"] #map .db{stroke:#111312}
 :root[data-theme="dark"] #map .da{stroke:#e6efe9}
 :root[data-theme="dark"] .lg.la{box-shadow:0 0 0 1.5px #e6efe9}
 :root[data-theme="dark"] .ln-n,:root[data-theme="dark"] .stage h3 .n{color:var(--on-accent)}
@@ -395,7 +396,7 @@ details.all .it b{font-weight:600}
 :root[data-theme="dark"] .t-b,:root[data-theme="dark"] .m-b{background:#1e2a45;color:#b1c6f5}
 :root[data-theme="dark"] .t-l{background:#3a3018;color:#e0c27a}
 :root[data-theme="dark"] .m-c{background:#3a2a18;color:#e9b47c}
-:root[data-theme="dark"] .m-s{background:#24342f;color:var(--ink)}
+:root[data-theme="dark"] .m-s{background:var(--raised);color:var(--ink)}
 :root[data-theme="dark"] #bubbles .r-g circle{fill:#1d3a2b;stroke:#5cb874}
 :root[data-theme="dark"] #bubbles .r-g text{fill:#a9e6b0}
 :root[data-theme="dark"] #bubbles .r-b circle{fill:#1e2a45;stroke:#7d9be0}
@@ -406,14 +407,16 @@ details.all .it b{font-weight:600}
 :root[data-theme="dark"] .lg.g{background:#5cb874}
 :root[data-theme="dark"] .lg.b{background:#7d9be0}
 :root[data-theme="dark"] .lg.l{background:#c9a347}
-:root[data-theme="dark"] .br::before,:root[data-theme="dark"] .bc::before{border-color:#3a4f47}
-:root[data-theme="dark"] .br::after{border-color:#3a4f47}
+:root[data-theme="dark"] .br::before,:root[data-theme="dark"] .bc::before{border-color:#3a3f3c}
+:root[data-theme="dark"] .br::after{border-color:#3a3f3c}
 :root[data-theme="dark"] .gd{fill:#1d3a2b;stroke:#5cb874}
 :root[data-theme="dark"] .gk{stroke:#8ad68f}
 :root[data-theme="dark"] .gdrop{color:#f2a27f}
 :root[data-theme="dark"] .donut text,:root[data-theme="dark"] .sz svg text{fill:var(--ink)}
 :root[data-theme="dark"] .theme-t .i-sun{display:inline}:root[data-theme="dark"] .theme-t .i-moon{display:none}
-
+:root[data-theme="dark"] .tag,:root[data-theme="dark"] .bc,:root[data-theme="dark"] .node,:root[data-theme="dark"] .side,:root[data-theme="dark"] .gain,:root[data-theme="dark"] .mono.m-s{background-color:var(--raised)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .step.last .node{background-color:var(--head)}}
+:root[data-theme="dark"] .step.last .node{background-color:var(--head)}
 </style>
 <script>try{var t=localStorage.getItem("heidi-theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
 </head>
